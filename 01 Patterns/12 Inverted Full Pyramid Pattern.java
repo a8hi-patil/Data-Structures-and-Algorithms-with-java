@@ -1,7 +1,6 @@
-#include <iostream>
-using namespace std;
+class InvertedFullPyramidPattern{
 
-int main()
+public static void main( String[] args )
 {
 
     int n = 5;
@@ -10,21 +9,22 @@ int main()
     {
         for (int j = 0; j < i; j++)
         {
-            cout << " ";
+            System.out.print(" ");
         }
 
         for (int j = 0; j < 2 * n - 2 * i - 1; j++)
         {
-            if (j % 2)
+            if (j % 2==1)
             {
-                cout << " ";
+            System.out.print(" ");
             }
             else
             {
-                cout << "*";
+            System.out.print("*");
             }
         }
-        cout << endl;
+            System.out.println();
     }
-    return 0;
+ 
+}
 }
